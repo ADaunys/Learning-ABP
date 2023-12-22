@@ -26,7 +26,7 @@ services:
     environment:
       - ASPNETCORE_URLS=https://+:443;http://+:80;
       - Kestrel__Certificates__Default__Path=/root/certificate/localhost.pfx
-      - Kestrel__Certificates__Default__Password=ad66a01a-fd5f-424d-958c-ed978b836794
+      - Kestrel__Certificates__Default__Password=d505acba-0d09-41a0-b488-cbd58ed4ad97
       - App__SelfUrl=https://localhost:44354
       - App__AngularUrl=http://localhost:4200
       - App_CorsOrigins=http://localhost:4200

@@ -3,7 +3,7 @@ import { Environment } from '@abp/ng.core';
 const baseUrl = 'http://localhost:4200';
 
 const oAuthConfig = {
-  issuer: 'https://localhost:44323/',
+  issuer: 'https://localhost:44355/',
   redirectUri: baseUrl,
   clientId: 'TodoApp_App',
   responseType: 'code',
@@ -20,7 +20,7 @@ export const environment = {
   oAuthConfig,
   apis: {
     default: {
-      url: 'https://localhost:44323',
+      url: 'https://localhost:44355',
       rootNamespace: 'TodoApp',
     },
     AbpAccountPublic: {

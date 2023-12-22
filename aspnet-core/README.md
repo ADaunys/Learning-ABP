@@ -27,10 +27,10 @@ In the production environment, you need to use a production signing certificate.
 To generate a signing certificate, you can use the following command:
 
 ```bash
-dotnet dev-certs https -v -ep authserver.pfx -p ad66a01a-fd5f-424d-958c-ed978b836794
+dotnet dev-certs https -v -ep authserver.pfx -p d505acba-0d09-41a0-b488-cbd58ed4ad97
 ```
 
-> `ad66a01a-fd5f-424d-958c-ed978b836794` is the password of the certificate, you can change it to any password you want.
+> `d505acba-0d09-41a0-b488-cbd58ed4ad97` is the password of the certificate, you can change it to any password you want.
 
 It is recommended to use **two** RSA certificates, distinct from the certificate(s) used for HTTPS: one for encryption, one for signing.
 

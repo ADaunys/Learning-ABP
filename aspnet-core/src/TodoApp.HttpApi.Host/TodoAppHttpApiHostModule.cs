@@ -85,7 +85,7 @@ public class TodoAppHttpApiHostModule : AbpModule
 
             PreConfigure<OpenIddictServerBuilder>(serverBuilder =>
             {
-                serverBuilder.AddProductionEncryptionAndSigningCertificate("openiddict.pfx", "ad66a01a-fd5f-424d-958c-ed978b836794");
+                serverBuilder.AddProductionEncryptionAndSigningCertificate("openiddict.pfx", "d505acba-0d09-41a0-b488-cbd58ed4ad97");
             });
         }
     }
