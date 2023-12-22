@@ -1,0 +1,37 @@
+<abp-page [title]="'::Menu:Home' | abpLocalization">
+  <div class="card">
+    <div class="card-header">{{ '::Welcome' | abpLocalization }}</div>
+    <div class="card-body">
+      <p>
+        {{ '::LongWelcomeMessage' | abpLocalization }}
+      </p>
+      <p *ngIf="!hasLoggedIn">
+        <a (click)="login()" class="btn btn-primary" role="button"><i class="fa fa-sign-in me-1" aria-hidden="true"></i>{{ 'AbpAccount::Login' | abpLocalization }}</a>
+      </p>
+      <hr />
+      <p class="text-right"><a href="https://abp.io?ref=tmpl" target="_blank">abp.io</a></p>
+    </div>
+  </div>
+  <div class="card mt-5">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md d-flex align-items-center">
+          <div class="pe-0 pe-md-4">
+            <div class="mb-3">
+              <label for="inputTitle" class="form-label">{{ '::Title' | abpLocalization }}</label>
+              <input type="text" class="form-control" id="inputTitle" [(ngModel)]="title" />
+
+              <label for="inputDescription" class="form-label">{{ '::Description' | abpLocalization }}</label>
+              <input type="text" class="form-control" id="inputDescription" [(ngModel)]="description" />
+
+              <label for="inputDueDate" class="form-label">{{ '::DueDate' | abpLocalization }}</label>
+              <input type="date" class="form-control" id="inputDueDate" [(ngModel)]="dueDate" />
+
+              <button type="button" class="btn btn-primary mt-3" (click)="createTaskItem()">{{ '::Create' | abpLocalization }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</abp-page>
